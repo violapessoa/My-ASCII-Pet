@@ -37,7 +37,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/violapessoa/My-ASCII-Pet.git
-cd myasciipet
+cd my-ascii-pet
 ```
 
 Build the project:
