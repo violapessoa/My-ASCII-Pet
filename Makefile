@@ -15,7 +15,7 @@ main.o: src/main.c src/pet.h
 pet.o: src/pet.c src/pet.h
 	$(CC) $(CFLAGS) -c src/pet.c
 
-petart.o: src/pet.c src/pet.h
+petart.o: src/petart.c src/pet.h
 	$(CC) $(CFLAGS) -c src/petart.c
 
 rps.o: src/rps.c src/pet.h
@@ -23,4 +23,5 @@ rps.o: src/rps.c src/pet.h
 
 clean:
 	rm -f $(OBJFILES) $(TARGET) *~
+
 
