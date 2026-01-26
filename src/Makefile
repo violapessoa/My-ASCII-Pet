@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall
 LDFLAGS =
-OBJFILES = example.o main.o
-TARGET = extest
+OBJFILES = main.o pet.o petart.o rps.o
+TARGET = bin/myasciipet
 
 all: $(TARGET)
 
@@ -15,8 +15,12 @@ main.o: src/main.c src/pet.h
 pet.o: src/pet.c src/pet.h
 	$(CC) $(CFLAGS) -c src/pet.c
 
+petart.o: src/pet.c src/pet.h
+	$(CC) $(CFLAGS) -c src/petart.c
+
 rps.o: src/rps.c src/pet.h
 	$(CC) $(CFLAGS) -c src/rps.c
 
 clean:
 	rm -f $(OBJFILES) $(TARGET) *~
+
